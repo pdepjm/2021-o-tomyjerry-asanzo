@@ -1,6 +1,13 @@
+import example.*
 
-test "testX" {
+test "Si tom tiene más velocidad puede atrapar" {
 
-	assert.that(true)
+	assert.that(tom.puedeAtrapar(nibbles))
+
+}
+
+test "Si tom tiene menos velocidad no puede atrapar" {
+
+	assert.notThat(tom.puedeAtrapar(jerry))
 
 }
